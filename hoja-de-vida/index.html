@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de desarrollo de software, proyectos académicos y habilidades tecnológicas.">
+  <title>Mi portafolio | Desarrollador de software</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#inicio" class="brand">Mi<span>Portafolio</span>.</a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#hoja-de-vida">Hoja de vida</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="button button-small" href="#proyectos">Ver proyectos ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="status-dot"></span> PORTAFOLIO PERSONAL</span>
+
+        <h1>Hola, soy <span id="heroName">Tu nombre</span>.<br>
+          Creo soluciones <span class="accent">digitales.</span>
+        </h1>
+
+        <p class="hero-description" id="heroIntro">
+          Soy estudiante de desarrollo de software interesado en la programación,
+          el diseño web y la creación de aplicaciones útiles.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="button">Explorar proyectos ↗</a>
+          <a href="#hoja-de-vida" class="button button-outline">Conocer mi perfil</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          En formación · Abierto a aprender y crear
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="avatar" id="avatar">TN</div>
+        <span class="card-label">SOBRE MI PERFIL</span>
+        <h2 id="cardName">Tu nombre</h2>
+        <p id="cardRole">Desarrollador de software en formación</p>
+        <div class="tag-list" id="heroSkills"></div>
+        <div class="card-footer">
+          <span>Aprendizaje continuo</span>
+          <span class="accent">✦</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section container" id="proyectos">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">MI TRABAJO</span>
+          <h2>Proyectos destacados<span class="accent">.</span></h2>
+          <p class="section-description">
+            Algunos de los proyectos académicos y personales en los que he trabajado.
+          </p>
+        </div>
+        <span class="project-counter" id="projectCount">0 proyectos</span>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section container" id="hoja-de-vida">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">MI PERFIL</span>
+          <h2>Hoja de vida<span class="accent">.</span></h2>
+          <p class="section-description">
+            Mi formación, mis habilidades y algunos de mis intereses profesionales.
+          </p>
+        </div>
+      </div>
+
+      <div class="resume-grid">
+        <article class="info-card">
+          <div class="info-card-heading">
+            <span class="info-icon">🎓</span>
+            <h3>Formación académica</h3>
+          </div>
+          <div class="timeline" id="education"></div>
+        </article>
+
+        <article class="info-card">
+          <div class="info-card-heading">
+            <span class="info-icon">💻</span>
+            <h3>Habilidades técnicas</h3>
+          </div>
+          <div class="skill-list" id="skills"></div>
+
+          <div class="about-block">
+            <h3>Sobre mí</h3>
+            <p id="aboutText"></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="resume-actions">
+        <button class="button" id="downloadCv" type="button">
+          Descargar mi perfil ↓
+        </button>
+        <span class="muted-text">Descarga un resumen de tu perfil en formato TXT.</span>
+      </div>
+    </section>
+
+    <section class="section container" id="contacto">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow">CONTACTO</span>
+          <h2>¿Creamos algo juntos?</h2>
+          <p id="contactText">
+            Estoy interesado en aprender, colaborar y participar en nuevos proyectos.
+          </p>
+        </div>
+        <a class="button" id="emailLink" href="mailto:tu-correo@ejemplo.com">
+          Escríbeme ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> <span id="footerName">Tu nombre</span>.</p>
+      <a href="#inicio">Volver al inicio ↑</a>
+      <p>Desarrollado con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
