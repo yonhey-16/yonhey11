@@ -88,6 +88,7 @@ button {
 }
 
 .nav-links a:hover,
+.nav-links a[aria-current="page"],
 .social-links a:hover,
 .footer a:hover {
   color: var(--accent);
@@ -635,4 +636,13 @@ button {
   *::after {
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Páginas separadas */
+main {
+  min-height: 65vh;
+}
+
+.nav-links a[aria-current="page"] {
+  font-weight: 700;
 }
